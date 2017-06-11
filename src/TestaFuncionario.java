@@ -22,6 +22,7 @@ public class TestaFuncionario {
 		}
 
 		
+		
 		f1.mostra();
 	}
 
