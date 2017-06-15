@@ -1,16 +1,15 @@
 
 public class Conta {
-	int numero;
-	double saldo;
-	double limite;
-	Cliente titular;
+	private int numero;
+	private double saldo;
+	private double limite;
+	private Cliente titular;
 	
-	boolean saca(double valor){
-		if (this.saldo < valor){
-			return false;
-		}else{
-			this.saldo -= valor;
-			return true;
+	public void saca(double quantidade){
+		if (quantidade > this.saldo + this.limite){
+			System.out.println("Não posso sacar fora do limite");
+		}else {
+			this.saldo -= quantidade; 
 		}
 	}
 	
