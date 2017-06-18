@@ -5,7 +5,7 @@ public class TestaConstrutor {
 		Cliente titular = new Cliente();
 		titular.setNome("Bruno");
 		
-		Conta minhaConta = new Conta(titular);
+		Conta minhaConta = new Conta(10,titular);
 		
 		System.out.println(minhaConta.getTitular().getNome());
 
