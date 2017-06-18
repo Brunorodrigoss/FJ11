@@ -4,8 +4,8 @@ public class Programa {
 		Conta minhaConta;
 		minhaConta = new Conta();
 		
-		minhaConta.titular.nome = "Duke";
-		minhaConta.saldo=1000.0;
+		minhaConta.getTitular().setNome("Duke"); 
+		minhaConta.setSaldo(1000);
 		
 		if (minhaConta.saca(2000)){
 			System.out.println("Consegui sacar");
