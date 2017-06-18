@@ -1,20 +1,20 @@
 
 public class Empresa {
-	String nome;
-	String cnpj;
-	Funcionario[] empregados;
+	private String nome;
+	private String cnpj;
+	private Funcionario[] empregados;
 
 
 	void adiciona(Funcionario funcionario) {
 		
 		if (contem(funcionario)){
-			System.out.println("O usuário "+funcionario.nome+" já exite!");
+			System.out.println("O usuário "+funcionario.getNome()+" já exite!");
 			
 		}else{
 			for (int i = 0; i < this.empregados.length; i++){
 				if(empregados[i] == null  ){
 					this.empregados[i] = funcionario;
-					System.out.println("Usuário "+empregados[i].nome+" adicionado!");
+					System.out.println("Usuário "+empregados[i].getNome()+" adicionado!");
 					return;
 				}
 			}
@@ -39,8 +39,8 @@ public class Empresa {
 			}else{
 				System.out.println("Informações de funcionário:");
 				System.out.println("*================================*");
-				System.out.println("Nome: "+empregados[i].nome);
-				System.out.println("Salario: "+empregados[i].salario);
+				System.out.println("Nome: "+empregados[i].getNome());
+				System.out.println("Salario: "+empregados[i].getSalario());
 				System.out.println("*================================*");
 			}
 		}
@@ -52,7 +52,7 @@ public class Empresa {
 			if (empregados[i] == null){
 				continue;
 			}else{
-				if (funcionario.nome == empregados[i].nome){
+				if (funcionario.getNome() == empregados[i].getNome()){
 					return true;
 				} 
 			}
