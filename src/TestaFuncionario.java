@@ -3,27 +3,23 @@ public class TestaFuncionario {
 
 	public static void main(String[] args) {
 		Funcionario f1 = new Funcionario();
-		
-		f1.nome = "Danilo";
-		f1.salario = 100;
-		
-		f1.dataEntrada.dia = 6;
-		f1.dataEntrada.mes = 6;
-		f1.dataEntrada.ano = 2017;
-		
 		Funcionario f2 = new Funcionario();
-		f2.nome = "Danilo";
-		f2.salario = 100;
+		Funcionario f3 = new Funcionario();
+		Funcionario f4 = new Funcionario();
+		Funcionario f5 = new Funcionario();
+		Funcionario f6 = new Funcionario();
+		Funcionario f7 = new Funcionario();
+		Funcionario f8 = new Funcionario();
 		
-		if (f1 == f2) {
-			System.out.println("Iguais");
-		} else{
-			System.out.println("Diferentes");
-		}
-
-		
-		
-		f1.mostra();
+		System.out.println("Id - Func 8 :"+f8.getIdentificador()+"\n"+ 
+						   "Id - Func 7 :"+f7.getIdentificador()+"\n"+
+						   "Id - Func 6 :"+f6.getIdentificador()+"\n"+
+						   "Id - Func 5 :"+f5.getIdentificador()+"\n"+
+						   "Id - Func 4 :"+f4.getIdentificador()+"\n"+
+						   "Id - Func 3 :"+f3.getIdentificador()+"\n"+
+						   "Id - Func 2 :"+f2.getIdentificador()+"\n"+
+						   "Id - Func 1 :"+f1.getIdentificador()+"\n");
+	
 	}
 
 }
