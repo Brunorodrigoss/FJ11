@@ -1,12 +1,12 @@
 
 public class Funcionario {
-	private String nome;
-	private String departamento;
-	private double salario;
-	private Data dataEntrada;
-	private String rg;
-	private int indentificador;
-	private static int contador;
+	protected String nome;
+	protected String departamento;
+	protected double salario;
+	protected Data dataEntrada;
+	protected String rg;
+	protected int indentificador;
+	protected static int contador;
 	
 	public Funcionario() {
 		contador += 1;
@@ -18,6 +18,11 @@ public class Funcionario {
 		contador += 1;
 		this.indentificador = contador;
 	}
+	
+	public double getBonificacao(){
+		return this.salario * 0.10;
+	}
+	
 	public void setNome(String nome){
 		this.nome = nome;
 	}
