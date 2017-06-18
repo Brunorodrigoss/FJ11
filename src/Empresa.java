@@ -3,6 +3,10 @@ public class Empresa {
 	private String nome;
 	private String cnpj;
 	private Funcionario[] empregados;
+	
+	public Empresa(int leghtArray) {
+		empregados = new Funcionario[leghtArray];
+	}
 
 	public String getNome(){
 		return this.nome;
@@ -20,10 +24,6 @@ public class Empresa {
 		return this.empregados[posicao];
 	}
 	
-	public void setEmpregados(int posicao, empregados){
-		this.empregados[posicao]
-	}
-
 	void adiciona(Funcionario funcionario) {
 		
 		if (contem(funcionario)){
