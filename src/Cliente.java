@@ -5,6 +5,9 @@ public class Cliente {
 	private String cpf;
 	private int idade;
 	
+//	public Cliente(String cpf){
+//		this.cpf = cpf;
+//	}
 	public String getNome(){
 		return this.nome;
 	}
