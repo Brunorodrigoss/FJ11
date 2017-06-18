@@ -3,7 +3,7 @@ public class Funcionario {
 	private String nome;
 	private String departamento;
 	private double salario;
-	private Data dataEntrada = new Data();
+	private Data dataEntrada;
 	private String rg;
 	private int indentificador;
 	private static int contador;
